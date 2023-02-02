@@ -10,5 +10,5 @@ const carContainer = document.querySelector('.car-container');
 
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
-  carContainer.style.left = `${scrollY / 2}px`;
+  carContainer.style.left =  `${scrollY / 15}%`;
 });
