@@ -5,3 +5,10 @@ menu.addEventListener('click', function(){
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
 });
+
+const carContainer = document.querySelector('.car-container');
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  carContainer.style.left = `${scrollY / 2}px`;
+});
