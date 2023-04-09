@@ -12,3 +12,10 @@ window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   carContainer.style.left =  `${scrollY / 15}%`;
 });
+
+const mainBtn = document.getElementById('main__btn');
+const formContainer = document.querySelector('.form-container');
+
+mainBtn.addEventListener('click', () => {
+    formContainer.classList.toggle('hidden');
+});
